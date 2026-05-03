@@ -1,0 +1,331 @@
+
+                <html>
+                <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+                    <script src="https://cdn.tailwindcss.com"></script>
+                    <script>
+                        window.FontAwesomeConfig = {
+                            autoReplaceSvg: 'nest', // Options: 'nest', 'remove', 'replace'
+                        };
+                    </script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+                    <style>
+                    </style>
+                    <script>
+                    tailwind.config = {
+                    theme: {
+                        extend: {
+                        colors: {
+                            primary: {"50":"#fafafa","100":"#f5f5f5","200":"#e5e5e5","300":"#d4d4d4","400":"#a3a3a3","500":"#737373","600":"#525252","700":"#404040","800":"#262626","900":"#171717","950":"#0a0a0a"}
+                        }
+                        }
+                    }
+                    }
+                </script>
+                </head>
+
+                <body>
+                        <div id="library-screen" class="min-h-[840px] bg-neutral-900 text-white pb-20">
+  <!-- Header -->
+  <header id="header" class="sticky top-0 z-40 bg-neutral-900 border-b border-neutral-700 px-6 py-4">
+    <div class="flex items-center justify-between">
+      <h1 class="text-xl text-white">Library</h1>
+      <button class="w-10 h-10 bg-neutral-800 border border-neutral-700 rounded-lg flex items-center justify-center">
+        <i class="fa-solid fa-sliders text-white"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Tabs -->
+  <div class="sticky top-[73px] z-30 bg-neutral-900 border-b border-neutral-700 px-6 py-3">
+    <div class="flex items-center space-x-2">
+      <button class="px-4 py-2 bg-white text-neutral-900 rounded-lg text-sm">
+        Saved
+      </button>
+      <button class="px-4 py-2 bg-neutral-800 border border-neutral-700 text-neutral-400 rounded-lg text-sm">
+        Following
+      </button>
+      <button class="px-4 py-2 bg-neutral-800 border border-neutral-700 text-neutral-400 rounded-lg text-sm">
+        Tracking
+      </button>
+    </div>
+  </div>
+
+  <!-- Smart Collections -->
+  <section id="smart-collections" class="px-6 py-4">
+    <h2 class="text-sm text-neutral-400 mb-3">Smart Collections</h2>
+    
+    <div class="space-y-3 mb-6">
+      <!-- High Reward Potential -->
+      <div class="bg-neutral-800 border border-neutral-700 rounded-xl p-4">
+        <div class="flex items-center justify-between mb-2">
+          <div class="flex items-center">
+            <div class="w-10 h-10 bg-neutral-700 rounded-lg flex items-center justify-center mr-3">
+              <i class="fa-solid fa-star text-white"></i>
+            </div>
+            <div>
+              <h3 class="text-sm text-white">High Reward Potential</h3>
+              <p class="text-xs text-neutral-400">12 games</p>
+            </div>
+          </div>
+          <i class="fa-solid fa-chevron-right text-neutral-400"></i>
+        </div>
+      </div>
+
+      <!-- Matches Your DNA -->
+      <div class="bg-neutral-800 border border-neutral-700 rounded-xl p-4">
+        <div class="flex items-center justify-between mb-2">
+          <div class="flex items-center">
+            <div class="w-10 h-10 bg-neutral-700 rounded-lg flex items-center justify-center mr-3">
+              <i class="fa-solid fa-dna text-white"></i>
+            </div>
+            <div>
+              <h3 class="text-sm text-white">Matches Your DNA</h3>
+              <p class="text-xs text-neutral-400">8 games</p>
+            </div>
+          </div>
+          <i class="fa-solid fa-chevron-right text-neutral-400"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Saved Games List -->
+  <section id="saved-games" class="px-6 pb-6">
+    <div class="flex items-center justify-between mb-4">
+      <h2 class="text-sm text-neutral-400">All Saved Games (24)</h2>
+      <button class="text-xs text-white flex items-center">
+        <i class="fa-solid fa-arrow-down-wide-short mr-1"></i>
+        Sort
+      </button>
+    </div>
+
+    <div class="space-y-3">
+      <!-- Game Card 1 -->
+      <div class="bg-neutral-800 border border-neutral-700 rounded-xl p-4">
+        <div class="flex items-start mb-3">
+          <div class="w-16 h-16 bg-neutral-700 rounded-lg mr-3 flex items-center justify-center text-xs text-white">
+            Game Cover
+          </div>
+          <div class="flex-1">
+            <h3 class="text-sm text-white mb-1">Hades</h3>
+            <p class="text-xs text-neutral-400 mb-2">Action Roguelike</p>
+            <div class="flex items-center space-x-2">
+              <div class="px-2 py-1 bg-white text-neutral-900 rounded text-xs">98% Match</div>
+              <div class="px-2 py-1 bg-neutral-700 border border-neutral-600 text-white rounded text-xs">+450 pts</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="flex items-center justify-between text-xs text-neutral-400 mb-3">
+          <span>Last viewed: 2 hours ago</span>
+          <span class="flex items-center">
+            <i class="fa-solid fa-clock mr-1"></i>
+            15-20h
+          </span>
+        </div>
+
+        <div class="flex items-center space-x-2">
+          <button class="flex-1 bg-white text-neutral-900 py-2 rounded-lg text-xs flex items-center justify-center">
+            <i class="fa-solid fa-crosshairs mr-1"></i>
+            Track
+          </button>
+          <button class="flex-1 bg-neutral-700 border border-neutral-600 text-white py-2 rounded-lg text-xs flex items-center justify-center">
+            <i class="fa-solid fa-plus mr-1"></i>
+            Add to Quest
+          </button>
+          <button class="w-10 h-10 bg-neutral-700 border border-neutral-600 rounded-lg flex items-center justify-center">
+            <i class="fa-solid fa-trash text-neutral-400"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Game Card 2 -->
+      <div class="bg-neutral-800 border border-neutral-700 rounded-xl p-4">
+        <div class="flex items-start mb-3">
+          <div class="w-16 h-16 bg-neutral-700 rounded-lg mr-3 flex items-center justify-center text-xs text-white">
+            Game Cover
+          </div>
+          <div class="flex-1">
+            <h3 class="text-sm text-white mb-1">Dead Cells</h3>
+            <p class="text-xs text-neutral-400 mb-2">Roguevania</p>
+            <div class="flex items-center space-x-2">
+              <div class="px-2 py-1 bg-white text-neutral-900 rounded text-xs">95% Match</div>
+              <div class="px-2 py-1 bg-neutral-700 border border-neutral-600 text-white rounded text-xs">+380 pts</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="flex items-center justify-between text-xs text-neutral-400 mb-3">
+          <span>Last viewed: 1 day ago</span>
+          <span class="flex items-center">
+            <i class="fa-solid fa-clock mr-1"></i>
+            20-30h
+          </span>
+        </div>
+
+        <div class="flex items-center space-x-2">
+          <button class="flex-1 bg-white text-neutral-900 py-2 rounded-lg text-xs flex items-center justify-center">
+            <i class="fa-solid fa-crosshairs mr-1"></i>
+            Track
+          </button>
+          <button class="flex-1 bg-neutral-700 border border-neutral-600 text-white py-2 rounded-lg text-xs flex items-center justify-center">
+            <i class="fa-solid fa-plus mr-1"></i>
+            Add to Quest
+          </button>
+          <button class="w-10 h-10 bg-neutral-700 border border-neutral-600 rounded-lg flex items-center justify-center">
+            <i class="fa-solid fa-trash text-neutral-400"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Game Card 3 -->
+      <div class="bg-neutral-800 border border-neutral-700 rounded-xl p-4">
+        <div class="flex items-start mb-3">
+          <div class="w-16 h-16 bg-neutral-700 rounded-lg mr-3 flex items-center justify-center text-xs text-white">
+            Game Cover
+          </div>
+          <div class="flex-1">
+            <h3 class="text-sm text-white mb-1">Slay the Spire</h3>
+            <p class="text-xs text-neutral-400 mb-2">Deckbuilding Roguelike</p>
+            <div class="flex items-center space-x-2">
+              <div class="px-2 py-1 bg-white text-neutral-900 rounded text-xs">92% Match</div>
+              <div class="px-2 py-1 bg-neutral-700 border border-neutral-600 text-white rounded text-xs">+320 pts</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="flex items-center justify-between text-xs text-neutral-400 mb-3">
+          <span>Last viewed: 3 days ago</span>
+          <span class="flex items-center">
+            <i class="fa-solid fa-clock mr-1"></i>
+            10-15h
+          </span>
+        </div>
+
+        <div class="flex items-center space-x-2">
+          <button class="flex-1 bg-white text-neutral-900 py-2 rounded-lg text-xs flex items-center justify-center">
+            <i class="fa-solid fa-crosshairs mr-1"></i>
+            Track
+          </button>
+          <button class="flex-1 bg-neutral-700 border border-neutral-600 text-white py-2 rounded-lg text-xs flex items-center justify-center">
+            <i class="fa-solid fa-plus mr-1"></i>
+            Add to Quest
+          </button>
+          <button class="w-10 h-10 bg-neutral-700 border border-neutral-600 rounded-lg flex items-center justify-center">
+            <i class="fa-solid fa-trash text-neutral-400"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Game Card 4 -->
+      <div class="bg-neutral-800 border border-neutral-700 rounded-xl p-4">
+        <div class="flex items-start mb-3">
+          <div class="w-16 h-16 bg-neutral-700 rounded-lg mr-3 flex items-center justify-center text-xs text-white">
+            Game Cover
+          </div>
+          <div class="flex-1">
+            <h3 class="text-sm text-white mb-1">Enter the Gungeon</h3>
+            <p class="text-xs text-neutral-400 mb-2">Bullet Hell Roguelike</p>
+            <div class="flex items-center space-x-2">
+              <div class="px-2 py-1 bg-white text-neutral-900 rounded text-xs">89% Match</div>
+              <div class="px-2 py-1 bg-neutral-700 border border-neutral-600 text-white rounded text-xs">+290 pts</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="flex items-center justify-between text-xs text-neutral-400 mb-3">
+          <span>Last viewed: 5 days ago</span>
+          <span class="flex items-center">
+            <i class="fa-solid fa-clock mr-1"></i>
+            12-18h
+          </span>
+        </div>
+
+        <div class="flex items-center space-x-2">
+          <button class="flex-1 bg-white text-neutral-900 py-2 rounded-lg text-xs flex items-center justify-center">
+            <i class="fa-solid fa-crosshairs mr-1"></i>
+            Track
+          </button>
+          <button class="flex-1 bg-neutral-700 border border-neutral-600 text-white py-2 rounded-lg text-xs flex items-center justify-center">
+            <i class="fa-solid fa-plus mr-1"></i>
+            Add to Quest
+          </button>
+          <button class="w-10 h-10 bg-neutral-700 border border-neutral-600 rounded-lg flex items-center justify-center">
+            <i class="fa-solid fa-trash text-neutral-400"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Game Card 5 -->
+      <div class="bg-neutral-800 border border-neutral-700 rounded-xl p-4">
+        <div class="flex items-start mb-3">
+          <div class="w-16 h-16 bg-neutral-700 rounded-lg mr-3 flex items-center justify-center text-xs text-white">
+            Game Cover
+          </div>
+          <div class="flex-1">
+            <h3 class="text-sm text-white mb-1">Risk of Rain 2</h3>
+            <p class="text-xs text-neutral-400 mb-2">Roguelike Third-Person Shooter</p>
+            <div class="flex items-center space-x-2">
+              <div class="px-2 py-1 bg-white text-neutral-900 rounded text-xs">87% Match</div>
+              <div class="px-2 py-1 bg-neutral-700 border border-neutral-600 text-white rounded text-xs">+340 pts</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="flex items-center justify-between text-xs text-neutral-400 mb-3">
+          <span>Last viewed: 1 week ago</span>
+          <span class="flex items-center">
+            <i class="fa-solid fa-clock mr-1"></i>
+            25-35h
+          </span>
+        </div>
+
+        <div class="flex items-center space-x-2">
+          <button class="flex-1 bg-white text-neutral-900 py-2 rounded-lg text-xs flex items-center justify-center">
+            <i class="fa-solid fa-crosshairs mr-1"></i>
+            Track
+          </button>
+          <button class="flex-1 bg-neutral-700 border border-neutral-600 text-white py-2 rounded-lg text-xs flex items-center justify-center">
+            <i class="fa-solid fa-plus mr-1"></i>
+            Add to Quest
+          </button>
+          <button class="w-10 h-10 bg-neutral-700 border border-neutral-600 rounded-lg flex items-center justify-center">
+            <i class="fa-solid fa-trash text-neutral-400"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bottom Navigation -->
+  <nav id="bottom-nav" class="fixed bottom-0 left-0 right-0 bg-neutral-900 border-t border-neutral-700 px-6 py-4 z-30">
+    <div class="flex items-center justify-between">
+      <button class="flex flex-col items-center space-y-1">
+        <i class="fa-solid fa-house text-neutral-400"></i>
+        <span class="text-xs text-neutral-400">Dashboard</span>
+      </button>
+      <button class="flex flex-col items-center space-y-1">
+        <i class="fa-solid fa-magnifying-glass text-neutral-400"></i>
+        <span class="text-xs text-neutral-400">AI Search</span>
+      </button>
+      <button class="flex flex-col items-center space-y-1">
+        <i class="fa-solid fa-trophy text-neutral-400"></i>
+        <span class="text-xs text-neutral-400">Quests</span>
+      </button>
+      <button class="flex flex-col items-center space-y-1">
+        <i class="fa-solid fa-bookmark text-white"></i>
+        <span class="text-xs text-white">Library</span>
+      </button>
+      <button class="flex flex-col items-center space-y-1">
+        <i class="fa-solid fa-user text-neutral-400"></i>
+        <span class="text-xs text-neutral-400">Profile</span>
+      </button>
+    </div>
+  </nav>
+</div>
+
+                        </body>
+                        </html>
+                        
